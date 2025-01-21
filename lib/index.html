@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>はじめてのHTML</title>
+</head>
+<body>
+<h1>index.html</h1>
+<a href="tmp2.html">tmp2へ</a><br>
+<a href="http://127.0.0.1:3000/lib/tmp2.html">tmp2へ(絶対パス)</a><br>
+<a href="/lib/tmp2.html">tmp2へ(半絶対パス)</a><br>
+
+<a href="../bin/usr/tmp.html">tmpへ</a><br>
+<a href="/bin/usr/tmp.html">tmpへ(半絶対パス)</a><br>
+
+<img src="../img/1669.jpg">
+
+<ol>
+    <li>はじめてのHTML</li>
+    <ul>
+        <li>aaaa</li>
+    </ul>
+    <li>はじめてのCSS</li>
+</ol>
+
+
+<table border="1">
+    <tr>
+        <th colspan="2">名前</th>
+        
+        <th rowspan="2">性別</th>
+    </tr>
+    <tr>
+        <th>漢字</th>
+        <th>かな</th>
+        
+    </tr>
+    <tr>
+        <th>戸井田</th> 
+        <th>といだ</th>
+        <th>F</th>
+    </tr>
+    <tr>
+        <th>田中</th> 
+        <th>たなか</th>
+        <th>FM</th>
+    </tr>
+
+    <tbody>
+        <tr>
+            <td>&lt;</td>
+            <td>&gt;</td>
+            <td>&nbsp;</td>
+            <td>&amp;</td>
+            <td>&quot;</td>
+        </tr>
+    </tbody>
+
+</table><br>
+
+    <form action="#" method="post">
+       名前：<input type="text" name="name"><br>
+       パスワード：<input type="password"name="pass"><br>
+
+       性別： <input type="radio"name="gender"value="male"checked>男
+             <input type="radio"name="gender"value="female">女<br>
+
+             <input type="checkbox"name="triathlon"value="swim"checked>水泳<br>
+             <input type="checkbox"name="triathlon"value="bike">自転車<br>
+             <input type="checkbox"name="triathlon"value="run">走る<br>
+
+             <form action="URL"method="post"enctype="multipart/form-deta">
+                <input type="file"name="resume">
+             </form>
+             お気づきのことを1000文字で記述してください。<br>
+             <input type="hidden"name="employeeId"value="12345">
+             <!-- <textarea name="名前"rows="行数"cols="横幅">初期値</textarea> -->
+             <textarea name="remakes" rows="5" cols="50"></textarea><br>
+
+             <select name="hobby">
+                <option value="swim"selected>水泳</option>
+                <option value="bike"selected>自転車</option>
+                <option value="run"selected>走る</option>
+             </select><br>
+             趣味：
+
+             <select name="hobby"multiple>
+                <option value="swim"selected>水泳</option>
+                <option value="bike"selected>自転車</option>
+                <option value="run"selected>走る</option>
+             </select><br>
+             
+             <label for="nameFiled">名前：</label>
+             <input id="nameFiled"type="text"name="name"><br>
+             <label>パスワード：<input type="password"name="pass"><br></label>
+
+             <button type="submit">送信</button>
+             <button>送信</button>
+             <!-- <button><img src="btn.png"></button><br> -->
+
+             <button type="reset">リセット</button><br>
+             <button type="button">ただのボタン</button><br>
+             
+
+    </form>
+
+</body>
+</html>
